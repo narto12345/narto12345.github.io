@@ -8,6 +8,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
+    background-color: #ffe4d5c5;
 }
 
 /* Inicio - estilos para el marco de presentación */
@@ -51,6 +52,10 @@ body {
     animation: levitar 2s infinite alternate ease-in-out;
 }
 
+#button-start:hover {
+    color: #ffffffcd;
+}
+
 @keyframes levitar {
     0% {
         transform: translateY(0);
@@ -62,3 +67,14 @@ body {
 }
 
 /* Fin - estilos para el marco de presentación */
+
+/* Inicio - estilos para el índice */
+
+.navegation {
+    background-color: #ffffff30;
+    margin: 5vh 10vw 0vh 10vw;
+    height: 5rem;
+    border: 0.1rem solid #000;
+    border-radius: 2rem;
+    text-align: center;
+}
