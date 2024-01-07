@@ -11,6 +11,13 @@ body {
     background-color: #ffe4d5c5;
 }
 
+/* Media query para dispositivos con un ancho máximo de 768px (pantallas de celular) */
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 38.5%;
+    }
+}
+
 /* Inicio - estilos para el marco de presentación */
 
 .marco-presentation {
@@ -22,6 +29,10 @@ body {
 
 .marco-presentation.ocultar {
     opacity: 0;
+}
+
+.desaparecer {
+    display: none;
 }
 
 .title {
@@ -70,6 +81,7 @@ body {
 
 /* Inicio - estilos para el índice */
 
+/* Estilos para la barra de navegación */
 .navegation {
     background-color: #ffffff30;
     margin: 5vh 10vw 0vh 10vw;
@@ -77,4 +89,16 @@ body {
     border: 0.1rem solid #000;
     border-radius: 2rem;
     text-align: center;
+}
+
+.navegation ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.navegation a {
+    text-decoration: none;
 }
