@@ -3,12 +3,12 @@ html {
     font-size: 62.5%;
     /*para cuando añadimos un width y un padding no modifique el tamaño del elemento*/
     box-sizing: border-box;
+    background-color: #ffe4d5c5;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    background-color: #ffe4d5c5;
 }
 
 /* Inicio - estilos para el marco de presentación */
@@ -74,11 +74,11 @@ body {
 
 /* Inicio - estilos para el índice */
 
-/* Estilos para la barra de navegación */
 .navegation {
     display: flex;
     justify-content: center;
-    background-color: #ffffff30;
+    /* background-color: #ffffff30; */
+    background-color: #ff853e;
     margin: 5vh 10vw 0vh 10vw;
     height: 5rem;
     border: 0.1rem solid #000;
@@ -102,11 +102,11 @@ body {
 }
 
 .navegation a:hover {
-    color: #ff853e;
+    color: #fff;
 }
 
 main {
-    /* background-color: #ffffff30; */
+    /* background-color: #ff853e; */
     margin: 5vh 4vw 0vh 4vw;
     border: 0.1rem solid #000;
     border-radius: 2rem;
@@ -115,29 +115,34 @@ main {
 main .content {
     /* background-color: #ffffff30; */
     margin: 2vh 2vw 2vh 2vw;
-    border: 0.1rem solid #000;
+    /* border: 0.1rem solid #000; */
     /* border-radius: 2rem; */
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 2rem;
 }
 
 main .rostro {
-    display: inline-block;
-    border: 0.1rem solid #000;
-    border-radius: 10rem;
-    width: 15.7vw;
-    height: 32vh;
     background-image: url("/img/rostro.png");
-    background-repeat: no-repeat;
     background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    max-width: 100%;
+    border: 0.1rem solid #000;
+    border-radius: 100rem;
 }
 
 main .presentation {
-    /* background-color: red; */
-    display: inline-block;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    width: 70vw;
-    height: 32vh;
+    text-align: justify;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: #ff853e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Media query para dispositivos con un ancho máximo de 768px (pantallas de celular) */
@@ -146,7 +151,7 @@ main .presentation {
     html {
         font-size: 38.5%;
     }
-    
+
     .navegation a {
         font-size: 1.5rem;
         margin: 0 .5rem;
