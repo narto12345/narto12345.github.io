@@ -131,10 +131,13 @@ main .rostro {
     max-width: 100%;
     border: 0.1rem solid #000;
     border-radius: 100rem;
+    height: 30vh;
 }
 
 main .presentation {
     text-align: justify;
+    display: flex;
+    align-items: center;
 }
 
 footer {
