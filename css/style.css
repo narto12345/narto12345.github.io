@@ -174,13 +174,28 @@ footer {
     font-weight: bold;
 }
 
-
 .content-experience .entity-name {
     font-size: 1.8rem;
 }
 
 .content-experience .working-time {
     font-size: 1.8rem;
+}
+
+.content-experience .body {
+    margin-top: 1rem;
+    height: 0rem;
+    text-align: justify;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.experiences .content-experience.activa .body {
+    height: max-content;
+}
+
+.experiences .content-experience.activa .entity-name::after {
+    content: "-";
 }
 
 /* Media query para dispositivos con un ancho máximo de 768px (pantallas de celular) */
