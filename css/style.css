@@ -11,6 +11,11 @@ body {
     font-size: 2rem;
 }
 
+.enlace {
+    color: #2d84ff;
+    cursor: pointer;
+}
+
 /* Inicio - estilos para el marco de presentación */
 
 .marco-presentation {
@@ -79,10 +84,10 @@ body {
     justify-content: center;
     /* background-color: #ffffff30; */
     background-color: #ff853e;
-    margin: 5vh 10vw 0vh 10vw;
+    margin: 5vh 0vw 0vh 0vw;
     height: 5rem;
-    border: 0.1rem solid #000;
-    border-radius: 2rem;
+    /* border: 0.4rem solid #ff7220; */
+    /* border-radius: 2rem; */
     text-align: center;
 }
 
@@ -151,11 +156,12 @@ footer {
 /* Estilos para experiencia */
 .content-experience {
     background-color: #ff995e;
+    /* background-image: linear-gradient(to bottom, #ff853e 50%, #ffe4d5c5 100%); */
     margin: 1rem 2rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     text-align: center;
-    border: 0.1rem solid #000;
-    border-radius: 2rem;
+    /* border: 0.2rem solid #ff853e; */
+    /* border-radius: 2rem; */
     cursor: pointer;
 }
 
@@ -182,15 +188,31 @@ footer {
     font-size: 1.8rem;
 }
 
+.content-experience .head {
+    padding: 1rem;
+}
+
 .content-experience .body {
+    /* padding: 1rem; */
     margin-top: 1rem;
     height: 0rem;
     text-align: justify;
     overflow: hidden;
     transition: 0.5s;
+    /* background-color: #ffe4d5c5; */
+
+}
+
+.content-experience.activa .body {
+    padding: 1rem;
+}
+
+.experiences .content-experience.activa {
+    /* background-image: linear-gradient(to bottom, #ff853e 30%, #ffe4d5c5 10%); */
 }
 
 .experiences .content-experience.activa .body {
+    background-color: #ffe4d5c5;
     height: max-content;
 }
 
