@@ -44,11 +44,22 @@ if (producto) {
   marcoPresentation.classList.add("desaparecer");
 }
 
-// Funcionalidad de acordeón
+// Funcionalidad de acordeón en experiencias
 const acordeon = document.getElementsByClassName("content-experience");
 
 for (let i = 0; i < acordeon.length; i++) {
-  acordeon[i].addEventListener("click", function () {
+  acordeon[i].addEventListener("click", function (event) {
+    event.stopPropagation();
     this.classList.toggle("activa");
+  });
+}
+
+// Funcionalidad de acordeón en projectos de experiencias
+const acordeonProjectsE = document.getElementsByClassName("project");
+
+for (let i = 0; i < acordeonProjectsE.length; i++) {
+  acordeonProjectsE[i].addEventListener("click", function (event) {
+    event.stopPropagation();
+    // alert("hola");
   });
 }

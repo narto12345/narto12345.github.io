@@ -12,8 +12,14 @@ body {
 }
 
 .enlace {
-    color: #2d84ff;
+    color: #ff853e;
+    font-weight: bold;
     cursor: pointer;
+    text-decoration-line: underline;
+}
+
+h1 {
+    margin: 0rem;
 }
 
 /* Inicio - estilos para el marco de presentación */
@@ -111,21 +117,23 @@ body {
 }
 
 main {
-    /* background-color: #ff853e; */
-    margin: 5vh 4vw 0vh 4vw;
-    border: 0.1rem solid #000;
-    border-radius: 2rem;
+    background-color: #ff853e25;
+    margin: 2vh 4vw 2vh 4vw;
+    padding: 5rem;
+    /* border: 0.1rem solid #000; */
+    /* border-radius: 2rem; */
 }
 
 main .content {
     /* background-color: #ffffff30; */
-    margin: 2vh 2vw 2vh 2vw;
+    margin: 2vh 2vw 0vh 2vw;
     /* border: 0.1rem solid #000; */
     /* border-radius: 2rem; */
     /* display: flex; */
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     gap: 2rem;
+    align-items: center;
 }
 
 main .rostro {
@@ -146,7 +154,7 @@ main .presentation {
 }
 
 footer {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     background-color: #ff853e;
     color: #fff;
     padding: 20px;
@@ -173,7 +181,7 @@ footer {
     content: "+";
     position: absolute;
     font-size: 2.5rem;
-    right: 10rem;
+    right: 15rem;
 }
 
 .content-experience .role {
@@ -204,11 +212,8 @@ footer {
 }
 
 .content-experience.activa .body {
-    padding: 1rem;
-}
-
-.experiences .content-experience.activa {
-    /* background-image: linear-gradient(to bottom, #ff853e 30%, #ffe4d5c5 10%); */
+    padding: 1.5rem;
+    cursor: default;
 }
 
 .experiences .content-experience.activa .body {
@@ -218,6 +223,30 @@ footer {
 
 .experiences .content-experience.activa .entity-name::after {
     content: "-";
+}
+
+.projects .project {
+    background-color: #ff995e;
+    margin: 1rem 10rem 1rem 10rem;
+    cursor: pointer;
+}
+
+.projects .project:hover {
+    background-color: #ff853e;
+
+}
+
+.project .head {
+    text-align: center;
+}
+
+.project .name {
+    font-weight: bold;
+}
+
+.project .p-body {
+    background-color: #ffe4d56e;
+    padding: 2rem;
 }
 
 /* Media query para dispositivos con un ancho máximo de 768px (pantallas de celular) */
