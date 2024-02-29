@@ -50,6 +50,8 @@ const acordeon = document.getElementsByClassName("content-experience");
 for (let i = 0; i < acordeon.length; i++) {
   acordeon[i].addEventListener("click", function (event) {
     event.stopPropagation();
+    removeActiveExperiences(i);
+    removeActiveProjectsAll();
     this.classList.toggle("activa");
   });
 }
@@ -60,6 +62,29 @@ const acordeonProjectsE = document.getElementsByClassName("project");
 for (let i = 0; i < acordeonProjectsE.length; i++) {
   acordeonProjectsE[i].addEventListener("click", function (event) {
     event.stopPropagation();
-    // alert("hola");
+    removeActiveProjects(i);
+    this.classList.toggle("activa");
   });
+}
+
+function removeActiveProjects(j) {
+  for (let i = 0; i < acordeonProjectsE.length; i++) {
+    if (i != j) {
+      acordeonProjectsE[i].classList.remove("activa");
+    }
+  }
+}
+
+function removeActiveProjectsAll() {
+  for (let i = 0; i < acordeonProjectsE.length; i++) {
+    acordeonProjectsE[i].classList.remove("activa");
+  }
+}
+
+function removeActiveExperiences(j) {
+  for (let i = 0; i < acordeon.length; i++) {
+    if (i != j) {
+      acordeon[i].classList.remove("activa");
+    }
+  }
 }

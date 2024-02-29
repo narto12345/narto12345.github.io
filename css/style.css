@@ -177,6 +177,24 @@ footer {
     background-color: #ff853e;
 }
 
+.content-experience .head-experience {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    padding: 1rem;
+}
+
+.content-experience .logo-company {
+    background-image: url("/img/bext-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+}
+
+.content-experience .information {
+    text-align: left;
+}
+
 .entity-name::after {
     content: "+";
     position: absolute;
@@ -225,6 +243,8 @@ footer {
     content: "-";
 }
 
+
+
 .projects .project {
     background-color: #ff995e;
     margin: 1rem 10rem 1rem 10rem;
@@ -246,7 +266,14 @@ footer {
 
 .project .p-body {
     background-color: #ffe4d56e;
+    height: 0rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.project.activa .p-body {
     padding: 2rem;
+    height: max-content;
 }
 
 /* Media query para dispositivos con un ancho máximo de 768px (pantallas de celular) */
