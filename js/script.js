@@ -10,7 +10,7 @@ try {
     setTimeout(() => {
       marcoPresentation.classList.add("desaparecer");
       carouselMain.classList.add("carousel-p1");
-    }, 700);
+    }, 500);
   });
 } catch (ex) {
   console.log(ex);
@@ -45,6 +45,7 @@ let producto = urlParams.get("ocultar");
 
 if (producto) {
   marcoPresentation.classList.add("desaparecer");
+  carouselMain.classList.remove("desaparecer");
   carouselMain.classList.add("carousel-p1");
 }
 
