@@ -22,6 +22,10 @@ h1 {
     margin: 0rem;
 }
 
+.aparecer-suavemente {
+    opacity: 1;
+}
+
 /* Inicio - estilos para el marco de presentación */
 
 .marco-presentation {
@@ -131,9 +135,50 @@ main .content {
     /* border-radius: 2rem; */
     /* display: flex; */
     display: grid;
-    grid-template-columns: 1fr 2.5fr;
+    grid-template-columns: 18% 82%;
+    grid-template-rows: auto auto;
     gap: 2rem;
     align-items: center;
+}
+
+/* Estilos para carrusel */
+
+.carousel-container {
+    grid-column: 1/3;
+    overflow: hidden;
+    opacity: 0;
+    /* Inicialmente establece la opacidad en 0 */
+    transition: opacity 2s ease;
+    /* Agrega una transición suave */
+}
+
+.carousel-container.carousel-p1 {
+    opacity: 1;
+}
+
+.carousel-container .carousel {
+    display: flex;
+    align-items: center;
+    animation: scroll 50s linear infinite;
+    width: calc(34rem * 20);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-34rem * 10));
+    }
+}
+
+.carousel img {
+    /* border: 0.1rem solid #000f; */
+    height: 10rem;
+    margin-right: 5rem;
+    background-color: #ffffffa3;
+    border-radius: 1rem;
 }
 
 main .rostro {
@@ -142,15 +187,24 @@ main .rostro {
     background-repeat: no-repeat;
     background-position: center;
     max-width: 100%;
-    border: 0.1rem solid #000;
-    border-radius: 100rem;
+    /* border: 0.1rem solid #000; */
+    border-radius: 1rem;
     height: 30vh;
+    background-color: #ffffffa3;
 }
 
 main .presentation {
+    /* height: 30vh; */
     text-align: justify;
     display: flex;
     align-items: center;
+    font-size: 2.5rem;
+}
+
+.row-3 {
+    font-size: 2rem;
+    grid-column: 1/3;
+    text-align: justify;
 }
 
 footer {

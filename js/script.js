@@ -1,13 +1,16 @@
 // Funcionalidad de marco
 const marcoPresentation = document.getElementById("marco-presentation");
+const carouselMain = document.getElementById("carousel-main");
 const buttonStart = document.getElementById("button-start");
 
 try {
   buttonStart.addEventListener("click", () => {
+    carouselMain.classList.remove("desaparecer");
     marcoPresentation.classList.add("ocultar");
     setTimeout(() => {
       marcoPresentation.classList.add("desaparecer");
-    }, 1000);
+      carouselMain.classList.add("carousel-p1");
+    }, 700);
   });
 } catch (ex) {
   console.log(ex);
@@ -42,6 +45,7 @@ let producto = urlParams.get("ocultar");
 
 if (producto) {
   marcoPresentation.classList.add("desaparecer");
+  carouselMain.classList.add("carousel-p1");
 }
 
 // Funcionalidad de acordeón en experiencias
