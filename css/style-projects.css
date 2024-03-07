@@ -7,6 +7,11 @@
     row-gap: 5rem;
 }
 
+.projects-p a {
+    text-decoration: none;
+    color: #000;
+}
+
 .projects-p .project-p {
     background-color: #ff995e;
     height: 15rem;
