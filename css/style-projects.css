@@ -52,3 +52,28 @@
 .technology img {
     height: 4.5rem;
 }
+
+/* Media query para dispositivos con un ancho máximo de 768px (pantallas de celular) */
+@media only screen and (max-width: 768px) {
+
+    .projects-p {
+        /* display: grid; */
+        grid-template-columns: 70%;
+        /* justify-content: center; */
+        /* column-gap: 10rem; */
+        /* row-gap: 5rem; */
+    }
+
+    .projects-p .project-p {
+        height: 20rem;
+    }
+
+    .name-project-p {
+        height: 25%;
+    }
+
+    .technologies {
+        height: 75%;
+    }
+
+}
