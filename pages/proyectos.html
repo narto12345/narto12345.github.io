@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/style-projects.css">
     <link rel="shortcut icon" href="/img/favicon-portafolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style-alert.css">
 
 </head>
 
@@ -29,12 +30,12 @@
     </nav>
 
     <main>
-        <div style="margin-bottom: 3rem;">
+        <!-- <div style="margin-bottom: 3rem;">
             <h1 style="color: red; margin-left: 20px;">¡Página en desarrollo!</h1>
             <p>El siguiente enlace lo redirigirá a mi repositorio de proyectos en GitHub:</p>
             <a style="margin-left: 20px;" target="_blank" class="enlace"
                 href="https://github.com/narto12345">Repositorio de proyectos</a>
-        </div>
+        </div> -->
 
         <div class="projects-p">
             <a href="/pages/projects/system-projects-task.html">
@@ -55,7 +56,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="/pages/projects/api_restful.html">
                 <div class="project-p">
                     <div class="name-project-p">
                         API RESTful - JAX-RS
@@ -73,7 +74,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="/pages/projects/mi-directorio.html">
                 <div class="project-p">
                     <div class="name-project-p">
                         Mi Directorio - Java Swing
@@ -91,7 +92,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="/pages/projects/sistema-gt.html">
                 <div class="project-p">
                     <div class="name-project-p">
                         Sistema de Gestión de Tareas
@@ -109,7 +110,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="/pages/projects/crud-in-console.html">
                 <div class="project-p">
                     <div class="name-project-p">
                         CrudInConsole - SQL Server
@@ -127,7 +128,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="/pages/projects/pilot-test.html">
                 <div class="project-p">
                     <div class="name-project-p">
                         CRUD Web - Servlet - JSP
@@ -146,7 +147,7 @@
                 </div>
             </a>
             <a href="#">
-                <div class="project-p">
+                <div class="project-p" onclick="mostrarAlerta()">
                     <div class="name-project-p">
                         NartoStore - Java Swing
                     </div>
@@ -165,6 +166,12 @@
             </a>
 
         </div>
+        <div id="miModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarAlerta()">&times;</span>
+                <p>Este proyecto actualmente se encuentra en desarrollo</p>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -174,7 +181,7 @@
 
     <script src="/js/script.js"></script>
     <script src="https://kit.fontawesome.com/a292f49ca8.js" crossorigin="anonymous"></script>
-
+    <script src="/js/alert-project.js"></script>
 </body>
 
 </html>
