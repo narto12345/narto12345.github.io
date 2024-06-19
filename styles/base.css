@@ -1,0 +1,152 @@
+/* Globales */
+html {
+    /* configuracion de fuentes de texto */
+    box-sizing: border-box;
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.color1 {
+    background-color: #ffbc63;
+}
+
+.color2 {
+    background-color: #ffd26e;
+}
+
+.color3 {
+    background-color: #0033b7;
+}
+
+.color4 {
+    background-color: #437bf3;
+}
+
+.color5 {
+    background-color: #cad3ff;
+}
+
+.fa-solid {
+    color: #636363;
+}
+
+.texto-centrado {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bordes-negro {
+    border: 1px solid #000;
+}
+
+.project {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.con-center {
+    margin: 0 auto;
+}
+
+.rellenito {
+    padding: 15px;
+}
+
+.d-block {
+    display: block;
+}
+
+.box-peque {
+    width: 300px;
+}
+
+/* animaciones transversales */
+.hover-negrita:hover {
+    font-weight: bold;
+}
+
+.hover-fondo_azul:hover {
+    background-color: #437bf3;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* header y nav */
+.navigation-barra-top {
+    height: 40px;
+}
+
+.navigation-barra-button {
+    height: 20px;
+}
+
+.navigation-main {
+    margin: 0 auto 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navigation-main a {
+    padding: 10px;
+}
+
+.navigation-main a:hover {
+    background-color: #437bf3;
+    font-weight: bold;
+    color: #FFF;
+
+    .fa-solid {
+        color: #fff;
+    }
+}
+
+/* footer */
+footer {
+    /* background-color: #FF6426; */
+    /* background-color: #0097FF; */
+    padding: 50px 0;
+    /* border-top: 1px solid #000; */
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    h2 {
+        text-align: center;
+    }
+
+    .navigation-main {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 10px 10px;
+    }
+
+    .resp-mar-top {
+        margin-top: 20px;
+    }
+
+}
