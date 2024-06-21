@@ -36,14 +36,14 @@
         </div>
         <div class="navigation-barra-button color2"></div>
     </header>
-    <main class="container">
+    <main id="main" class="container">
         <!-- Acerce de mi -->
         <section id="about">
             <div class="about-container">
                 <img src="/images/Foto_Nicolas.jpg" alt="Mi Foto">
                 <div>
                     <h1>Sobre Mí</h1>
-                    <p class="texto-centrado">
+                    <p class="texto-justificado">
                         Bienvenido a mi portafolio. Soy Nicolás Sosa, un Ingeniero de Sistemas y Desarrollador de
                         Software con experiencia en el análisis, diseño, implementación y mantenimiento de soluciones
                         tecnológicas empresariales.
@@ -87,22 +87,45 @@
                     <a href="#" class="rellenito color2">Más información</a>
                 </article>
             </div>
-            <a href="#" class="d-block color2 rellenito hover-fondo_azul bordes-negro resp-mar-top box-peque con-center">Ver todos
+            <a href="#"
+                class="d-block color2 rellenito hover-fondo_azul bordes-negro resp-mar-top box-peque con-center bordes-rendondos">Ver
+                todos
                 los
                 proyectos...</a>
         </section>
 
-        <!-- certificados -->
-        <aside id="certificados">
-            <h2>Certificados</h2>
-            <p>Certificados destacados.</p>
-        </aside>
+        <div id="asides">
+            <!-- certificados -->
+            <h2 class="texto-centrado">Certificados</h2>
+            <aside id="certificados">
+                <div class="certification">
+                    <img src="/images/certifications/az-900.png" alt="az-900" title="Certification az-900">
+                    <p>Microsoft Certified: Azure Fundamentals</p>
+                </div>
+                <div class="certification">
+                    <img src="/images/certifications/udemy-logo.png" alt="Udemy-typescript-Fernando Herrera"
+                        title="Udemy-typescript-Fernando Herrera">
+                    <p>TypeScript: Tu completa guía y manual de mano</p>
+                </div>
+                <div class="certification">
+                    <img src="/images/certifications/udemy-logo.png" alt="Udemy-java-Ubaldo Acosta"
+                        title="Udemy-java-Ubaldo Acosta">
+                    <p> Universidad Java - De Cero a Experto</p>
+                </div>
+                <div class="certification">
+                    <img src="/images/certifications/udemy-logo.png" alt="Udemy-java-Alejandro Taboada"
+                        title="Udemy-java-Alejandro Taboada">
+                    <p>Aprende Programación en Java (de Básico a Avanzado)</p>
+                </div>
+            </aside>
 
-        <!-- blog -->
-        <aside id="blog">
-            <h2>Blog</h2>
-            <p>Últimas publicaciones del blog.</p>
-        </aside>
+            <!-- blog-->
+            <h2 class="texto-centrado">Blog</h2>
+            <aside id="blog">
+                <iframe id="frame-blog" title="blog" class="d-block"
+                    src="https://narto-daytoday.blogspot.com/"></iframe>
+            </aside>
+        </div>
     </main>
     <footer class="color4">
         <div class="container">
@@ -114,6 +137,7 @@
 
     <!-- Scripts (JavaScript) -->
     <script src="https://kit.fontawesome.com/a292f49ca8.js" crossorigin="anonymous"></script>
+    <script src="/scripts/index.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,23 @@
+/*Grid principal Main*/
+
+#main {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-bottom: 50px;
+}
+
+#about {
+    grid-column: 1/3;
+}
+
+#projects {
+    grid-column: 1/2;
+}
+
+#asides {
+    grid-column: 2/3;
+}
+
 /* Flexbox para la sección sobre mí */
 .about-container {
     display: flex;
@@ -69,8 +89,56 @@ a {
     margin: 0px auto;
 }
 
+/*H2 de asides*/
+#asides h2 {
+    height: 10%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Certifications*/
+#certificados {
+    overflow: auto;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.certification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certification img {
+    max-width: 100px;
+}
+
+.certification p {
+    font-size: 15px;
+}
+
+/* Blog*/
+
+#blog {
+    height: 40%;
+}
+
+#frame-blog {
+    width: 100%;
+    height: 100%;
+}
+
 /* Media queries */
 @media (max-width: 768px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -90,11 +158,29 @@ a {
         margin: 0 20px;
     }
 
+    #projects {
+        grid-column: 1/3;
+    }
+
+    #asides {
+        grid-column: 1/3;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
     #certificados {
         padding: 0 10px;
+        height: auto;
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
     }
 
     #blog {
         padding: 0 10px;
+        height: 400px;
+        grid-column: 1/3;
     }
 }

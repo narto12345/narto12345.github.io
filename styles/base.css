@@ -39,6 +39,10 @@ html {
 }
 
 .texto-centrado {
+    text-align: center;
+}
+
+.texto-justificado {
     text-align: justify;
 }
 
@@ -49,6 +53,11 @@ a {
 
 .bordes-negro {
     border: 1px solid #000;
+}
+
+.bordes-rendondos {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .project {
@@ -147,6 +156,10 @@ footer p {
 
     .resp-mar-top {
         margin-top: 20px;
+    }
+
+    .box-peque {
+        width: 100%;
     }
 
 }
