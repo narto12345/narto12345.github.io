@@ -57,6 +57,7 @@
 .projects-container article {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border: 1px solid #000;
     /* margin-left: 20px;
     margin-right: 20px; */
@@ -73,6 +74,11 @@
 p,
 a {
     text-align: center;
+}
+
+.project p {
+    text-align: justify;
+    padding: 10px;
 }
 
 .projects-container article a {

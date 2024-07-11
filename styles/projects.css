@@ -1,0 +1,38 @@
+.projects-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
+.project {
+    border: 1px solid #000;
+    border-bottom-right-radius: 20px;
+}
+
+.encabezado-img {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.encabezado-img img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.project a {
+    border-bottom-right-radius: 20px;
+}
+
+.project a:hover {
+    background-color: #437bf3;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 100%
+    }
+}
