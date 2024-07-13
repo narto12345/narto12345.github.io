@@ -8,6 +8,9 @@
 .project {
     border: 1px solid #000;
     border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .encabezado-img {
@@ -30,9 +33,21 @@
     font-weight: bold;
 }
 
+footer p {
+    text-align: center;
+}
+
 /* Media queries */
 @media (max-width: 768px) {
     .projects-container {
         grid-template-columns: 100%
+    }
+
+    .encabezado-img img {
+        max-width: 100px;
+    }
+
+    .encabezado-img h2 {
+        text-align: left;
     }
 }

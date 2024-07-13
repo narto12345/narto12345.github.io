@@ -1,0 +1,24 @@
+#main {
+    margin-bottom: 10px;
+}
+
+main p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+a {
+    word-wrap: break-word;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    #main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+footer p {
+    text-align: center;
+}
