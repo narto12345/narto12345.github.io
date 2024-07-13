@@ -37,28 +37,57 @@
         <div class="navigation-barra-button color2"></div>
     </header>
     <main id="main" class="container">
-        <h2>Título</h2>
+        <h2>CRUD Web API RESTful con JavaScript, JAVA EE y MySQL</h2>
         <h3>¿Qué es?</h3>
         <p>
-            ...
+            Aplicación CRUD Web API RESTful que se conecta a una base de datos MySQL, implementada con Java EE,
+            JavaScript y alojada en un servidor Glassfish.
         </p>
         <h3>Tecnologías utilizadas:</h3>
         <ul>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java EE 8</li>
+            <li>Glassflish 5.0</li>
+            <li>JAX-RS con jersey client de Glassfish</li>
+            <li>MySQL</li>
         </ul>
         <h3>Funcionamiento:</h3>
         <p>
-            ...
+            Esta aplicación CRUD sigue una arquitectura en n capas, y está conformada de la siguiente manera:
         </p>
+        <ul>
+            <li>
+                Capa del cliente:Elaborado con JavaScript nativo y consume el API RESTful por medio del método
+                “fetch”. El Backend está
+                desarrollado con Java EE 8 alojado en un servidor de aplicaciones Glassflish 5.0
+            </li>
+            <li>
+                Capa de servicio: En esta capa se crea un servicio RESTful, implementando JAX-RS con jersey client
+                de Glassfish.
+            </li>
+            <li>
+                Capa de datos: Elaborada con la implementación EclipseLink de la API de JPA. La unidad de
+                persistencia la suministra el servidor de Glassflish, por medio de un pool de conexiones.
+            </li>
+            <li>
+                Base de datos: El motor MySQL, y contiene una base de datos llamada “test”, la cual aloja una tabla
+                llamada “persona”.
+            </li>
+        </ul>
         <h3>Código fuente:</h3>
         <p>
-            <a href="#" target="_blank">#</a>
+            <a href="https://github.com/narto12345/JavaScript-API-RESTful-Java-EE-MySQL"
+                target="_blank">https://github.com/narto12345/JavaScript-API-RESTful-Java-EE-MySQL</a>
         </p>
         <h3>Ilustraciones:</h3>
         <div class="ilustraciones">
-            <img src="#" alt="img">
+            <iframe title="video demostrativo" src="https://www.youtube.com/embed/m4bkmcuGC94?si=pB8rl3A0GxltqUNW">
+            </iframe>
+            <img src="/images/projects/crud-restful/api_restful_1.png" alt="img-crud-restful-1">
+            <img src="/images/projects/crud-restful/api_restful_2.png" alt="img-crud-restful-2">
+            <img src="/images/projects/crud-restful/api_restful_3.png" alt="img-crud-restful-3">
         </div>
     </main>
     <footer class="color4">

@@ -37,41 +37,63 @@
         <div class="navigation-barra-button color2"></div>
     </header>
     <main id="main" class="container">
-        <h2>System Project Tasks</h2>
+        <h2>Mi Directorio</h2>
         <h3>¿Qué es?</h3>
         <p>
-            Esta aplicación es un sistema administrador de proyectos. Está desarrollador con ASP.NET Core (.NET Versión
-            7), utilizando la tecnología de Razor Pages. Para la persistencia se utiliza una base de datos MySQL, y se
-            encuentra mapeada con Entity Framework.
+            Esta es una aplicación de escritorio que cumple la función de directorio personal, está realizada en Java 8
+            y utiliza una base de datos MySQL.
         </p>
         <h3>Tecnologías utilizadas:</h3>
         <ul>
-            <li>.NET 7</li>
-            <li>Razor Pages de ASP.NET Core</li>
-            <li>Entity Framework</li>
-            <li>MySQL</li>
+            <li>JDK 8</li>
+            <li>Java Swing</li>
+            <li>MySQL 8.0.28</li>
+            <li>
+                Bibliotecas externas:
+                <ul>
+                    <li>mysql-connector-java-5.1.46-bin.jar</li>
+                    <li>jcalendar-1.4.jar</li>
+                </ul>
+            </li>
         </ul>
         <h3>Funcionamiento:</h3>
         <p>
-            Este sistema permite la creación de proyectos, usuarios y tareas. Los usuarios pueden ser añadidos a los
-            proyectos y asignarles tareas, especificando nombre, descripción, responsable, estado, prioridad y fecha de
-            vencimiento.
-            Es una aplicación web monolítica elaborada con Razor Pages en ASP.NET Core con C#, las vistas fueron creadas
-            con páginas Razor y para comunicación con la base de datos MySQL se utiliza Entity Framework.
+            Para utilizar la solución tenga en cuenta los siguientes apartados:
         </p>
+        <ul>
+            <li>
+                Utilizar Java SE 8.
+            </li>
+            <li>
+                En el repositorio encontrará un archivo llamado “midirectorio.sql”, este archivo es la base de datos
+                MySQL, por lo tanto deberá importarla en su motor de base de datos MySQL.
+            </li>
+            <li>
+                El archivo “Conexión.java” ubicado en src/modelo/Conexión.java contiene las variables “usuario” y
+                “contraseña”, adecue el valor de estas variables de acuerdo con la configuración de su base de datos
+                MySQL.
+            </li>
+            <li>
+                La aplicación de construcción utilizada es Apache Ant, por ende, debe importar de manera manual las
+                siguientes bibliotecas, las cuales se encuentran incluidas en este repositorio:
+                <ul>
+                    <li>Conector de MySQL: “mysql-connector-java-5.1.46-bin.jar”</li>
+                    <li>Calendario: “jcalendar-1.4.jar”</li>
+                </ul>
+            </li>
+        </ul>
         <h3>Código fuente:</h3>
         <p>
-            <a href="https://github.com/narto12345/SystemProjectTasks-Razor-Pages-MySQL"
-                target="_blank">https://github.com/narto12345/SystemProjectTasks-Razor-Pages-MySQL</a>
+            <a href="https://github.com/narto12345/Mi_Directorio"
+                target="_blank">https://github.com/narto12345/Mi_Directorio</a>
         </p>
         <h3>Ilustraciones:</h3>
         <div class="ilustraciones">
-            <iframe title="video demostrativo" src="https://www.youtube.com/embed/0bqAK9kVvr4?si=KZ2GDUyEHzuMYu-A">
+            <iframe title="video demostrativo" src="https://www.youtube.com/embed/Zoa4Gvk_7-A?si=BwQ48Kd7tg_0cuZW">
             </iframe>
-            <img src="/images/projects/system-project-task/spt_1.png" alt="spt-1">
-            <img src="/images/projects/system-project-task/spt_2.png" alt="spt-2">
-            <img src="/images/projects/system-project-task/spt_3.png" alt="spt-3">
-            <img src="/images/projects/system-project-task/spt_4.png" alt="spt-4">
+            <img src="https://github.com/narto12345/Mi_Directorio/raw/main/image_1.png" alt="img-mi-directorio-1">
+            <img src="https://github.com/narto12345/Mi_Directorio/raw/main/image_2.png" alt="img-mi-directorio-2">
+            <img src="https://github.com/narto12345/Mi_Directorio/raw/main/image_3.png" alt="img-mi-directorio-3">
         </div>
     </main>
     <footer class="color4">

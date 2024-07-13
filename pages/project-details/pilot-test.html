@@ -37,28 +37,60 @@
         <div class="navigation-barra-button color2"></div>
     </header>
     <main id="main" class="container">
-        <h2>Título</h2>
+        <h2>PilotTest - CRUD - JavaServer Pages</h2>
         <h3>¿Qué es?</h3>
         <p>
-            ...
+            Este proyecto es un simple CRUD, fue diseñado con el patrón de diseño MVC, y está elaborado con las
+            siguientes tecnologías:
         </p>
         <h3>Tecnologías utilizadas:</h3>
         <ul>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
+            <li>NetBeans 16</li>
+            <li>Maven</li>
+            <li>GlassFish 5.0.1</li>
+            <li>Java SE 8</li>
+            <li>Java EE 8 (Servlets y JSPs)</li>
+            <li>Microsoft SQL Server</li>
+            <li>CSS</li>
         </ul>
         <h3>Funcionamiento:</h3>
         <p>
-            ...
+            Para implementar esta solución en su equipo, tenga en cuenta lo siguiente:
         </p>
+        <ul>
+            <li>
+                Utilice un IDE como NetBeans, sin embargo, es posible realizarlo en cualquier otro.
+            </li>
+            <li>
+                Su servidor debe contar con la biblioteca que le permita conectarse a la base de datos SQL Server.
+                El conector se encuentra en el directorio raíz de este repositorio “mssql-jdbc-12.2.0.jre8”:
+                <ul>
+                    <li>
+                        En el caso de GlassFish 5.0.1 deberá ubicarse en la ruta “glassfish5\glassfish\lib\” donde
+                        se encuentra ubicado su servidor y copiar ahí el conector mencionado anteriormente.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                En el directorio raíz también encontrará una base de datos llamada “PilotTestDB.sql”, deberá
+                importarla dentro de su servidor de base de datos Microsoft SQL Server.
+            </li>
+            <li>
+                En el código fuente del proyecto, es necesario que configure las variables USER, PASSWORD y URL
+                ubicadas en la clase “PilotTest\src\main\java\model\ ConnectionDB.java”, conforme a las
+                configuraciones y credenciales de su base de datos SQL Server.
+            </li>
+        </ul>
         <h3>Código fuente:</h3>
         <p>
-            <a href="#" target="_blank">#</a>
+            <a href="https://github.com/narto12345/PilotTest?tab=readme-ov-file"
+                target="_blank">https://github.com/narto12345/PilotTest?tab=readme-ov-file</a>
         </p>
         <h3>Ilustraciones:</h3>
         <div class="ilustraciones">
-            <img src="#" alt="img">
+            <img src="https://github.com/narto12345/PilotTest/blob/main/image_1.png?raw=true" alt="img-1">
+            <img src="https://github.com/narto12345/PilotTest/blob/main/image_2.png?raw=true" alt="img-2">
+            <img src="https://github.com/narto12345/PilotTest/blob/main/image_3.png?raw=true" alt="img-3">
         </div>
     </main>
     <footer class="color4">
