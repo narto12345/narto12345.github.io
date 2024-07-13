@@ -11,6 +11,18 @@ a {
     word-wrap: break-word;
 }
 
+.ilustraciones {
+    display: flex;
+    overflow: auto;
+}
+
+.ilustraciones img,
+iframe {
+    height: 300px;
+    border: 1px solid #000;
+    margin-right: 10px;
+}
+
 /* Media queries */
 @media (max-width: 768px) {
     #main {
