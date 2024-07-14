@@ -38,6 +38,10 @@ html {
     color: #636363;
 }
 
+.texto-izquieda {
+    text-align: left;
+}
+
 .texto-centrado {
     text-align: center;
 }
@@ -142,6 +146,10 @@ footer p {
 
 /* Media queries */
 @media (max-width: 768px) {
+    .navigation-main {
+        text-align: center;
+    }
+
     h2 {
         text-align: center;
     }
