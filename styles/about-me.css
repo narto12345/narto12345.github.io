@@ -1,0 +1,49 @@
+main p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.img-size-200 {
+    height: 200px;
+}
+
+.img-size-300 {
+    height: 300px;
+}
+
+.mg-top-30 {
+    margin-top: 30px;
+}
+
+.mg-botton-30 {
+    margin-bottom: 30px;
+}
+
+.d-block {
+    display: block;
+}
+
+.centra-bloque {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container {
+    display: flex;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    #main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .img-container {
+        flex-direction: column;
+    }
+}

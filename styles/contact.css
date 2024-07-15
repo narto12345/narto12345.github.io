@@ -1,0 +1,45 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+}
+
+main p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+li {
+    margin-top: 10px;
+}
+
+a {
+    word-wrap: break-word;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+}
