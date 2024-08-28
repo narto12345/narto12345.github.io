@@ -132,6 +132,12 @@ a {
     }
 }
 
+/* Round image */
+.img-round {
+    /* width: 400px; */
+    border-radius: 100%;
+}
+
 /* footer */
 footer {
     /* background-color: #FF6426; */
