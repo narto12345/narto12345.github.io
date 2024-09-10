@@ -16,6 +16,11 @@ a {
     overflow: auto;
 }
 
+main a {
+    color: rgb(49, 132, 255);
+    font-weight: bold;
+}
+
 .ilustraciones img,
 iframe {
     height: 300px;
